@@ -8,13 +8,23 @@ namespace AR_Project1.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Welcome()
         {
+            ViewData["Title"] = "欢迎";
+
+            return View();
+
+        }
+
+        public IActionResult Main()
+        {
+            ViewData["Title"] = "主页";
             return View();
         }
 
         public IActionResult About()
         {
+            ViewData["Title"] = "关于我们";
             ViewData["Message"] = "Your application description page.";
 
             return View();

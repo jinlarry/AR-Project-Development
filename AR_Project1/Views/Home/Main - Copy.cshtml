@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    @*<meta http-equiv="X-UA-Compatible" content="IE=edge">*@
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">*@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -28,8 +28,6 @@
 </head>
 
 <body>
-
-
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -66,6 +64,13 @@
             <h2>这里是公司口号</h2>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">了解更多</a>
+
+            <!-- for testing scrolling -->
+            <environment names="Development">
+                <a class="btn btn-dark btn-lg" id="enable">enable scrolling</a>
+                <a class="btn btn-dark btn-lg" id="disable">disable scrolling</a>
+            </environment>
+            <!-- for testing scrolling -->
         </div>
     </header>
 
@@ -275,22 +280,61 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- for overlay blur -->
-    @*<script>
-            $(function () {
-                $('.overlay-pop-up').hide();
-                $('.overlay-pop-up').fadeIn(1000);
+    <!-- for blur -->
+    <!-- for disable scrolling-->
+    <script>
+        document.getElementById("enable").onclick = function () {
+            enableScroll();
+            document.getElementById("status").innerHTML = "enabled";
+            document.getElementById("status").className = "enabled";
+        };
 
-                $('.overlay-close-button').click(function (e) {
+        document.getElementById("disable").onclick = function () {
+            disableScroll();
+            document.getElementById("status").innerHTML = "disabled";
+            document.getElementById("status").className = "disabled";
+        };
+    </script>
 
-                    $('.overlay-pop-up').fadeOut(700);
-                    $('#overlay').removeClass('blur-in');
-                    $('#overlay').addClass('blur-out');
-                    e.stopPropagation();
+    <script>
+        // left: 37, up: 38, right: 39, down: 40,
+        // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+        var keys = { 32: 1, 33: 1, 34: 1, 35: 1, 37: 1, 38: 1, 39: 1, 40: 1 };
 
-                });
-            });
-        </script>*@
+        function preventDefault(e) {
+            e = e || window.event;
+            if (e.preventDefault)
+                e.preventDefault();
+            e.returnValue = false;
+        }
+
+        function preventDefaultForScrollKeys(e) {
+            if (keys[e.keyCode]) {
+                preventDefault(e);
+                return false;
+            }
+        }
+
+        function disableScroll() {
+            if (window.addEventListener) // older FF
+                window.addEventListener('DOMMouseScroll', preventDefault, false);
+            window.onwheel = preventDefault; // modern standard
+            window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+            window.ontouchmove = preventDefault; // mobile
+            document.onkeydown = preventDefaultForScrollKeys;
+        }
+
+        function enableScroll() {
+            if (window.removeEventListener)
+                window.removeEventListener('DOMMouseScroll', preventDefault, false);
+            window.onmousewheel = document.onmousewheel = null;
+            window.onwheel = null;
+            window.ontouchmove = null;
+            document.onkeydown = null;
+        }
+    </script>
+    <!-- disable scrolling -->
+
 
     <script>
         // Closes the sidebar menu
