@@ -12,6 +12,11 @@
     <Content Include="wwwroot\css\animate.css" />
     <Content Include="wwwroot\css\bootstrap.css" />
     <Content Include="wwwroot\css\bootstrap.min.css" />
+    <Content Include="wwwroot\css\hover-shadow-box.css" />
+    <Content Include="wwwroot\css\hover-shadow-style.css" />
+    <Content Include="wwwroot\css\navbar.css" />
+    <Content Include="wwwroot\css\grayscale.min.css" />
+    <Content Include="wwwroot\css\navbar.min.css" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\css\site.min.css" />
     <Content Include="wwwroot\css\stylish-portfolio.css" />
@@ -62,12 +67,14 @@
     <Content Include="wwwroot\img\Main\portfolio-3.jpg" />
     <Content Include="wwwroot\img\Main\portfolio-4.jpg" />
     <Content Include="wwwroot\img\Main\welcome-1920-1200.jpg" />
-    <Content Include="wwwroot\img\rounded.png" />
     <Content Include="wwwroot\img\Welcome\rounded.png" />
-    <Content Include="wwwroot\img\Welcome\welcome-1920-1200.jpg" />
     <Content Include="wwwroot\img\Welcome\welcome-snigle-tree.jpg" />
     <Content Include="wwwroot\img\Welcome\welcome-yellow-field.jpg" />
+    <Content Include="wwwroot\js\grayscale.js" />
+    <Content Include="wwwroot\js\grayscale.min.js" />
     <Content Include="wwwroot\js\jquery.js" />
+    <Content Include="wwwroot\js\navbar.js" />
+    <Content Include="wwwroot\js\navbar.min.js" />
     <Content Include="wwwroot\js\welcome-button.js" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +89,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Views\Home\Main - Copy.cshtml" />
     <None Include="Views\Home\Main.cshtml" />
     <None Include="Views\Home\Welcome.cshtml" />
   </ItemGroup>

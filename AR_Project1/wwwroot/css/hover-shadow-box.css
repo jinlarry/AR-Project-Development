@@ -1,0 +1,190 @@
+﻿.fh5co-section-heading {
+    margin-bottom: 4em;
+}
+
+    .fh5co-section-heading .fh5co-lead {
+        font-size: 45px;
+        line-height: 60px;
+    }
+
+@media screen and (max-width: 768px) {
+    .fh5co-section-heading .fh5co-lead {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+.fh5co-section-heading .emp {
+    font-family: "Playfair Display", times, serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.fh5co-section-heading .fh5co-sub {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#fh5co-offcanvass .fh5co-lead {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #ccc;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .fh5co-section-heading .fh5co-lead {
+        font-size: 35px;
+        line-height: 50px;
+    }
+}
+
+.fh5co-bg-section .fh5co-hero-wrap .fh5co-hero-intro .fh5co-lead, .fh5co-bg-section .fh5co-hero-wrap .fh5co-hero-intro .fh5co-sub-lead {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.fh5co-bg-section .fh5co-hero-wrap .fh5co-hero-intro .fh5co-lead {
+    margin-bottom: 30px;
+}
+
+#fh5co-footer .fh5co-lead {
+    font-size: 13px;
+    font-family: "Montserrat", arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.js .to-animate,
+.js .animate-object,
+.js .animate-box,
+.js .animate-single {
+    opacity: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+    display: none !important;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm-block {
+        display: block !important;
+    }
+}
+
+#fh5co-features,
+#fh5co-feature-3,
+#fh5co-faqs {
+    background: #fafafa;
+}
+
+
+.fh5co-feature, .fh5co-figure {
+    display: block;
+    color: #444;
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    padding: 40px 10px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 1.5em;
+}
+
+    .fh5co-feature:hover, .fh5co-feature:focus, .fh5co-feature:active, .fh5co-figure:hover, .fh5co-figure:focus, .fh5co-figure:active {
+        text-decoration: none;
+        outline: none;
+    }
+
+    .fh5co-feature .fh5co-feature-icon, .fh5co-figure .fh5co-feature-icon {
+        width: 80px;
+        height: 80px;
+        display: block;
+        display: table;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        border: 2px solid #4fd2c2;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+    }
+
+        .fh5co-feature .fh5co-feature-icon i, .fh5co-figure .fh5co-feature-icon i {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 50px;
+            color: #4fd2c2;
+        }
+
+    .fh5co-feature .fh5co-feature-lead, .fh5co-feature .fh5co-figure-lead, .fh5co-figure .fh5co-feature-lead, .fh5co-figure .fh5co-figure-lead {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-family: "Montserrat", arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .fh5co-feature .fh5co-feature-text, .fh5co-feature .fh5co-figure-text, .fh5co-figure .fh5co-feature-text, .fh5co-figure .fh5co-figure-text {
+        color: #919191;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 24px;
+    }
+
+    .fh5co-feature:hover, .fh5co-feature.active, .fh5co-figure:hover, .fh5co-figure.active {
+        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+        -ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+        margin-top: -10px;
+    }
+
+@media screen and (max-width: 768px) {
+    .fh5co-feature:hover, .fh5co-feature.active, .fh5co-figure:hover, .fh5co-figure.active {
+        margin-top: 0px;
+    }
+}
+
+.fh5co-feature:hover .fh5co-feature-icon, .fh5co-feature.active .fh5co-feature-icon, .fh5co-figure:hover .fh5co-feature-icon, .fh5co-figure.active .fh5co-feature-icon {
+    background: #4fd2c2;
+}
+
+    .fh5co-feature:hover .fh5co-feature-icon i, .fh5co-feature.active .fh5co-feature-icon i, .fh5co-figure:hover .fh5co-feature-icon i, .fh5co-figure.active .fh5co-feature-icon i {
+        color: #fff;
+    }
