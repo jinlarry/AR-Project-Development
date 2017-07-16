@@ -3,7 +3,8 @@
     <div class="blur"></div>
 
     <div class="image-container center text-center">
-        <img id="welcome-logo" class="img-responsive img-circle" src="~/img/Welcome/rounded.png" alt="Alternate Text" />
+        <img id="welcome-logo" class="img-responsive img-circle" src="~/img/Welcome/logo-white.jpg" alt="Alternate Text" />
+        <h2 id="logo-alt">AGRO REPUBLIC</h2>
         <br />
         <a asp-controller="Home" asp-action="Main" class="btn green" id="btn-home">去主页看看</a>
     </div>
@@ -63,20 +64,6 @@
                 font-weight: 700;
                 font-size: 38px;
             }
-
-        /*.image-container p {
-            text-align: center;
-            color: #ffffff;
-            text-shadow: 1px 1px rgba(0, 0, 0, .1);
-            margin-top: 0px;
-            font-family: 'Lato', serif;
-            font-weight: 400;
-            font-size: 22px;
-        }
-
-        .image-container a {
-            text-align: center;
-        }*/
     </style>
 
     <!-- For welcome page button -->
@@ -84,11 +71,11 @@
         /* css for welcome buttons */
         #btn-home {
             cursor: pointer;
-            margin-top: 50px;
+            margin-top: 30px;
             border-radius: 5px;
             text-decoration: none;
             padding: 10px;
-            font-size: 22px;
+            font-size: 20px;
             transition: .3s;
             -webkit-transition: .3s;
             -moz-transition: .3s;
@@ -97,13 +84,13 @@
         }
 
         #btn-home {
-            color: #2ecc71;
-            border: 2px #2ecc71 solid;
+            color: #fff;
+            border: 3px #fff solid;
         }
 
             #btn-home :hover {
                 color: #fff;
-                background-color: #2ecc71;
+                background-color: #fff;
             }
     </style>
 
@@ -112,12 +99,18 @@
         #welcome-logo {
             animation-duration: 2s;
         }
+
+        #logo-alt {
+            color: #fff;
+        }
     </style>
 }
 
 @section Scripts{
     <script>
+        // hide elements
         $('#scale-navbar').hide();
+        $('#logo-alt').hide();
 
         var buttonInter = setInterval(function () {
             $('#btn-home').toggleClass("animated bounceIn");
@@ -134,6 +127,10 @@
             height: "600px"
         }, 2500, function () {
             $('#welcome-logo').show();
+
+            setTimeout(function () {
+                $('#logo-alt').show();
+            }, 800);
 
             setTimeout(function () {
                 $('#btn-home').show();
