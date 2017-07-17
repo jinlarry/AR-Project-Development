@@ -168,10 +168,10 @@
     }
 
     .fh5co-feature:hover, .fh5co-feature.active, .fh5co-figure:hover, .fh5co-figure.active {
-        -webkit-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
-        -ms-box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
-        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+        -webkit-box-shadow: 0 6px 20px 2px rgba(0, 0, 0,0.4), 0 6px 20px 2px rgba(0, 0, 0,0.5);
+        -moz-box-shadow: 0 6px 20px 2px rgba(0, 0, 0,0.4), 0 6px 20px 2px rgba(0, 0, 0,0.5);
+        -ms-box-shadow: 0 6px 20px 2px rgba(0, 0, 0,0.4), 0 6px 20px 2px rgba(0, 0, 0,0.5);
+        box-shadow: 0 6px 20px 2px rgba(0, 0, 0,0.4), 0 6px 20px 2px rgba(0, 0, 0,0.5);
         margin-top: -10px;
     }
 

@@ -108,47 +108,47 @@
 
 @section Scripts{
     <script>
+
         // hide elements
         $('#scale-navbar').hide();
         $('#logo-alt').hide();
-
-        var buttonInter = setInterval(function () {
-            $('#btn-home').toggleClass("animated bounceIn");
-        }, 1800);
-
-        var logoInter = setInterval(function () {
-            $('#welcome-logo').addClass("animated jackInTheBox");
-        }, 1800);
-
+        $('#section-nav').hide();
         $('#btn-home').hide();
         $('#welcome-logo').hide();
 
-        $('.widget').animate({
-            height: "600px"
-        }, 2500, function () {
-            $('#welcome-logo').show();
-
-            setTimeout(function () {
-                $('#logo-alt').show();
-            }, 800);
-
-            setTimeout(function () {
-                $('#btn-home').show();
-            }, 1000);
-        });
-
-        // set interval for toggling class when hover off, pause interval when hover
-        $('#btn-home').hover(function (e) {
-            clearInterval(buttonInter);
-            $('#btn-home').removeClass("animated bounceIn");
-        }, function (e) {
-            buttonInter = setInterval(function () {
+        // run js when background image fully loaded.
+        $('body').css('background', 'img/Welcome/welcome-yellow-field.jpg').ready(function () {
+            var buttonInter = setInterval(function () {
                 $('#btn-home').toggleClass("animated bounceIn");
-            }, 1800);
-        });
-    </script>
+            }, 2500);
 
-    <script>
-        $('#section-nav').hide();
+            var logoInter = setInterval(function () {
+                $('#welcome-logo').addClass("animated jackInTheBox");
+            }, 1800);
+
+            $('.widget').animate({
+                height: "600px"
+            }, 2500, function () {
+                $('#welcome-logo').show();
+
+                setTimeout(function () {
+                    $('#logo-alt').show();
+                }, 1000);
+
+                setTimeout(function () {
+                    $('#btn-home').show();
+                }, 1200);
+            });
+
+            // set interval for toggling class when hover off, pause interval when hover
+            $('#btn-home').hover(function (e) {
+                clearInterval(buttonInter);
+                $('#btn-home').removeClass("animated bounceIn");
+            }, function (e) {
+                buttonInter = setInterval(function () {
+                    $('#btn-home').toggleClass("animated bounceIn");
+                }, 1800);
+            });
+        });
     </script>
 }

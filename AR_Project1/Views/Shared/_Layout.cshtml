@@ -8,16 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>@ViewData["Title"] - Agro Republic</title>
+    <title>@ViewData["Title"] | 农业共和国 - Agro Republic</title>
 
     <!-- Bootstrap Core CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
-    <link href="~/css/stylish-portfolio.css" rel="stylesheet">
-    <link href="~/css/navbar.css" rel="stylesheet" />
-    <link href="~/css/hover-shadow-box.css" rel="stylesheet" />
+    <link href="~/css/stylish-portfolio.css" rel="stylesheet"> <!-- main css -->
+    <link href="~/css/navbar.css" rel="stylesheet" />  <!-- for navbar -->
+    <link href="~/css/hover-shadow-box.css" rel="stylesheet" />  <!-- for about us boxes -->
+    <link href="~/css/timeline-style.css" rel="stylesheet" /> <!-- for timeline -->
 
     <!-- Custom Fonts -->
     <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -163,61 +164,7 @@
         $('.map').on('click', onMapClickHandler);
     </script>
 
-
     @RenderSection("Scripts", required: false)
 
-    <!-- for disable scrolling-->
-    @*<script>
-            document.getElementById("enable").onclick = function () {
-                enableScroll();
-                document.getElementById("status").innerHTML = "enabled";
-                document.getElementById("status").className = "enabled";
-            };
-
-            document.getElementById("disable").onclick = function () {
-                disableScroll();
-                document.getElementById("status").innerHTML = "disabled";
-                document.getElementById("status").className = "disabled";
-            };
-        </script>
-
-        <script>
-            // left: 37, up: 38, right: 39, down: 40,
-            // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-            var keys = { 32: 1, 33: 1, 34: 1, 35: 1, 37: 1, 38: 1, 39: 1, 40: 1 };
-
-            function preventDefault(e) {
-                e = e || window.event;
-                if (e.preventDefault)
-                    e.preventDefault();
-                e.returnValue = false;
-            }
-
-            function preventDefaultForScrollKeys(e) {
-                if (keys[e.keyCode]) {
-                    preventDefault(e);
-                    return false;
-                }
-            }
-
-            function disableScroll() {
-                if (window.addEventListener) // older FF
-                    window.addEventListener('DOMMouseScroll', preventDefault, false);
-                window.onwheel = preventDefault; // modern standard
-                window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-                window.ontouchmove = preventDefault; // mobile
-                document.onkeydown = preventDefaultForScrollKeys;
-            }
-
-            function enableScroll() {
-                if (window.removeEventListener)
-                    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-                window.onmousewheel = document.onmousewheel = null;
-                window.onwheel = null;
-                window.ontouchmove = null;
-                document.onkeydown = null;
-            }
-        </script>*@
-    <!-- disable scrolling -->
 </body>
 </html>
