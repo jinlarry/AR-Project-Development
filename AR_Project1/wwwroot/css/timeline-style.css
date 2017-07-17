@@ -1,12 +1,12 @@
 ﻿.timeline-container {
     background: #d8eef1;
     width: 100%;
-    padding:40px;
+    padding: 40px;
 }
 
 .timeline {
     list-style: none;
-    padding: 20px 0 20px;   
+    padding: 20px 0 20px;
     position: relative;
 }
 
@@ -118,6 +118,70 @@
                 left: -14px;
                 right: auto;
             }
+
+.timeline-panel:hover {
+    animation-name: example;
+    animation-duration: 1s;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: example;
+    -moz-animation-duration: 1s;
+    -o-animation-name: example;
+    -o-animation-duration: 1s;
+    animation-name: example;
+    animation-duration: 1s;
+    transition-timing-function: linear
+}
+
+@keyframes example {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+@-o-keyframes example {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+@-webkit-keyframes example {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+@-ms-keyframes example {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+@-moz-keyframes example {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.03);
+    }
+}
 
 .timeline-badge.primary {
     background-color: #2e6da4 !important;

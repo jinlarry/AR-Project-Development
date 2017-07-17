@@ -224,10 +224,6 @@ body {
     }
 }
 
-.map iframe {
-    /*pointer-events: none;*/
-}
-
 /* Footer */
 footer {
     padding: 25px;
