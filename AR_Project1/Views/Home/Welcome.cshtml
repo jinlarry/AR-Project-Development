@@ -18,10 +18,12 @@
         }
 
         .blur {
-            background: url('/img/Welcome/welcome-yellow-field.jpg') no-repeat center center fixed;
+            /*background: url('/img/Welcome/welcome-yellow-field.jpg') no-repeat center center fixed;*/
+            background: black;
+            opacity: 0.6;
             background-size: cover;
             overflow: hidden;
-            filter: blur(8px);
+            /*filter: blur(8px);*/
             position: absolute;
             height: 900px;
             top: -5px;
@@ -118,14 +120,6 @@
 
         // run js when background image fully loaded.
         $('body').css('background', 'img/Welcome/welcome-yellow-field.jpg').ready(function () {
-            var buttonInter = setInterval(function () {
-                $('#btn-home').toggleClass("animated bounceIn");
-            }, 2500);
-
-            var logoInter = setInterval(function () {
-                $('#welcome-logo').addClass("animated jackInTheBox");
-            }, 1800);
-
             $('.widget').animate({
                 height: "600px"
             }, 2500, function () {
@@ -140,6 +134,14 @@
                 }, 1200);
             });
 
+            var buttonInter = setInterval(function () {
+                $('#btn-home').toggleClass("animated bounceIn");
+            }, 2500);
+
+            var logoInter = setInterval(function () {
+                $('#welcome-logo').addClass("animated jackInTheBox");
+            }, 1800);
+
             // set interval for toggling class when hover off, pause interval when hover
             $('#btn-home').hover(function (e) {
                 clearInterval(buttonInter);
@@ -150,5 +152,6 @@
                 }, 1800);
             });
         });
+
     </script>
 }

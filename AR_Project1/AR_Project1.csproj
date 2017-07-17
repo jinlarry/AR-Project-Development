@@ -17,7 +17,6 @@
     <Content Include="wwwroot\css\navbar.min.css" />
     <Content Include="wwwroot\css\stylish-portfolio.css" />
     <Content Include="wwwroot\css\timeline-style.css" />
-    <Content Include="wwwroot\css\timeline.css" />
     <Content Include="wwwroot\font-awesome\css\font-awesome.css" />
     <Content Include="wwwroot\font-awesome\css\font-awesome.min.css" />
     <Content Include="wwwroot\font-awesome\fonts\fontawesome-webfont.eot" />
