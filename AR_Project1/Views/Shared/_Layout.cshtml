@@ -19,7 +19,6 @@
     <link href="~/css/navbar.css" rel="stylesheet" />  <!-- for navbar -->
     <link href="~/css/hover-shadow-box.css" rel="stylesheet" />  <!-- for about us boxes -->
     <link href="~/css/timeline-style.css" rel="stylesheet" /> <!-- for timeline -->
-
     <!-- Custom Fonts -->
     <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -40,17 +39,26 @@
 </head>
 
 <body>
-    <!-- Navigation -->
+    <!-- Navigation bar -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="scale-navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
+                    菜单 <i class="fa fa-bars"></i>
                 </button>
+
+                <!-- logo -->
+                @*<a class="navbar-brand page-scroll" href="#page-top">
+                        <i class="fa fa-play-circle"></i> <span class="light">Agro</span> Republic
+                    </a>*@
+
+                <!-- logo -->
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">Agro</span> Republic
+                    <img class="img-responsive" id="navbar-logo" src="~/img/Welcome/logo-white.jpg" width="30" height="20" alt="公司商标" />
+                    <span class="light">Agro</span> Republic
                 </a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
@@ -59,13 +67,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">链接1</a>
+                        <a class="page-scroll" href="#">关于我们</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">链接2</a>
+                        <a class="page-scroll" href="#">精选产品</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">链接3</a>
+                        <a class="page-scroll" href="#">历程</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">联系我们</a>
                     </li>
                 </ul>
             </div>

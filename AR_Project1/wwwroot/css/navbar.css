@@ -100,7 +100,6 @@
         }
 }
 
-
 .btn-circle {
     width: 70px;
     height: 70px;
@@ -119,3 +118,7 @@
     .btn-circle:hover, .btn-circle:focus {
         color: cadetblue;
     }
+
+#navbar-logo {
+    display: inline;
+}
