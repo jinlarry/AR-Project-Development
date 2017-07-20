@@ -23,6 +23,8 @@
     <Content Include="wwwroot\css\navbar-products.min.css" />
     <Content Include="wwwroot\css\navbar.css" />
     <Content Include="wwwroot\css\navbar.min.css" />
+    <Content Include="wwwroot\css\stylish-portfolio - Copy.css" />
+    <Content Include="wwwroot\css\stylish-portfolio-products.css" />
     <Content Include="wwwroot\css\stylish-portfolio.css" />
     <Content Include="wwwroot\css\timeline-style.css" />
     <Content Include="wwwroot\font-awesome\css\font-awesome.css" />
