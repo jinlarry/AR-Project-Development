@@ -9,10 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot/img\Main\1080.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wwwroot\css\animate.css" />
     <Content Include="wwwroot\css\bootstrap.css" />
     <Content Include="wwwroot\css\bootstrap.min.css" />
     <Content Include="wwwroot\css\hover-shadow-box.css" />
+    <Content Include="wwwroot\css\navbar - Products.css" />
+    <Content Include="wwwroot\css\navbar - Products.min.css" />
+    <Content Include="wwwroot\css\navbar-products.css" />
+    <Content Include="wwwroot\css\navbar-products.min.css" />
     <Content Include="wwwroot\css\navbar.css" />
     <Content Include="wwwroot\css\navbar.min.css" />
     <Content Include="wwwroot\css\stylish-portfolio.css" />

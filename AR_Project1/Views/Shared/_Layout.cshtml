@@ -16,9 +16,6 @@
 
     <!-- Custom CSS -->
     <link href="~/css/stylish-portfolio.css" rel="stylesheet"> <!-- main css -->
-    <link href="~/css/navbar.css" rel="stylesheet" />  <!-- for navbar -->
-    <link href="~/css/hover-shadow-box.css" rel="stylesheet" />  <!-- for about us boxes -->
-    <link href="~/css/timeline-style.css" rel="stylesheet" /> <!-- for timeline -->
     <!-- Custom Fonts -->
     <link href="~/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
@@ -39,51 +36,6 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" id="scale-navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    菜单 <i class="fa fa-bars"></i>
-                </button>
-
-                <!-- logo -->
-                @*<a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i> <span class="light">Agro</span> Republic
-                    </a>*@
-
-                <!-- logo -->
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <img class="img-responsive" id="navbar-logo" src="~/img/Welcome/logo-white.jpg" width="30" height="20" alt="公司商标" />
-                    <span class="light">Agro</span> Republic
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">关于我们</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">精选产品</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">历程</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#">联系我们</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
     @RenderBody()
 
@@ -94,38 +46,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- navbar -->
-    <script src="~/js/navbar.js"></script>
-
     <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-        // Scrolls to the selected menu item on the page
-        $(function () {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-
         //#to-top button appears after scrolling
         var fixed = false;
         $(document).scroll(function () {

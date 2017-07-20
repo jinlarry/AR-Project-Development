@@ -21,25 +21,5 @@ namespace AR_Project1.Controllers
             ViewData["Title"] = "主页";
             return View();
         }
-
-        //public IActionResult About()
-        //{
-        //    ViewData["Title"] = "关于我们";
-        //    ViewData["Message"] = "Your application description page.";
-
-        //    return View();
-        //}
-
-        //public IActionResult Contact()
-        //{
-        //    ViewData["Message"] = "Your contact page.";
-
-        //    return View();
-        //}
-
-        //public IActionResult Error()
-        //{
-        //    return View();
-        //}
     }
 }
