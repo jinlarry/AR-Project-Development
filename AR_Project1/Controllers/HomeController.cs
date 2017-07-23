@@ -21,5 +21,11 @@ namespace AR_Project1.Controllers
             ViewData["Title"] = "主页";
             return View();
         }
+
+        public IActionResult Products()
+        {
+            ViewData["Title"] = "产品";
+            return View();
+        }
     }
 }

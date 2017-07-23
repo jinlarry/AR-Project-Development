@@ -1,0 +1,153 @@
+﻿@section Styles{
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <style>
+        .w3-third {
+        }
+
+            .w3-third img {
+                opacity: 0.8;
+                cursor: pointer
+            }
+
+                .w3-third img:hover {
+                    opacity: 1
+                }
+    </style>
+}
+
+@section Scripts{
+    <script>
+        // Modal Image Gallery
+        //function onClick(element) {
+        //    document.getElementById("img01").src = element.src;
+        //    document.getElementById("modal01").style.display = "block";
+        //    var captionText = document.getElementById("caption");
+        //    captionText.innerHTML = element.alt;
+        //}
+    </script>
+}
+
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1 id="main-header-h1" class="">Agro Republic</h1>
+        <h2 id="main-header-h2" class="">水果GALLERY页</h2>
+        <br>
+    </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+@*<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>*@
+
+<!-- !PAGE CONTENT! -->
+@*<div class="w3-main">*@
+
+<!-- Push down content on small screens -->
+@*<div class="w3-hide-large" style="margin-top:83px"></div>*@
+
+<!-- Photo grid -->
+@*<div class="w3-row">
+        <div class="w3-third">
+            <img src="~/img/Products/1-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/13-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/2-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+        </div>
+
+        <div class="w3-third">
+            <img src="~/img/Products/1-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/13-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/2-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+        </div>
+
+        <div class="w3-third">
+            <img src="~/img/Products/1-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/13-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+            <img src="~/img/Products/2-480.jpg" style="width:100%" onclick="onClick(this)" alt="（该图片的说明文字 该图片的说明文字 该图片的说明文字）">
+        </div>
+    </div>*@
+
+<!-- Modal for full size images on click-->
+@*<div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption"></p>
+        </div>
+    </div>*@
+
+<!-- End page content -->
+@*</div>*@
+
+
+<div class="w3-row-padding w3-margin-top">
+
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>5 Terre</h4>
+                <p> this is caption this is caption this is caption</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>Monterosso</h4>
+                <p> this is caption this is caption this is caption</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>Vernazza</h4>
+                <p> this is caption this is caption this is caption</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>Manarola</h4>
+                <p> this is caption this is caption this is caption</p>
+                <p>this is caption</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>Corniglia</h4>
+                <p> this is caption this is caption this is caption</p>
+                <p>this is caption</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-third">
+        <div class="w3-card-2">
+            <img src="~/img/Products/1-480.jpg" style="width:100%">
+            <div class="w3-container">
+                <h4>Riomaggiore</h4>
+                <p> this is caption this is caption this is caption</p>
+                <p>this is caption</p>
+            </div>
+        </div>
+    </div>
+
+</div>

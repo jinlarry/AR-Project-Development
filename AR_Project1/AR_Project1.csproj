@@ -17,14 +17,13 @@
     <Content Include="wwwroot\css\bootstrap.css" />
     <Content Include="wwwroot\css\bootstrap.min.css" />
     <Content Include="wwwroot\css\hover-shadow-box.css" />
-    <Content Include="wwwroot\css\navbar - Products.css" />
-    <Content Include="wwwroot\css\navbar - Products.min.css" />
+    <Content Include="wwwroot\css\lightgallery.css" />
+    <Content Include="wwwroot\css\lightgallery.min.css" />
     <Content Include="wwwroot\css\navbar-products.css" />
     <Content Include="wwwroot\css\navbar-products.min.css" />
     <Content Include="wwwroot\css\navbar.css" />
     <Content Include="wwwroot\css\navbar.min.css" />
-    <Content Include="wwwroot\css\stylish-portfolio - Copy.css" />
-    <Content Include="wwwroot\css\stylish-portfolio-products.css" />
+    <Content Include="wwwroot\css\products-gallery.css" />
     <Content Include="wwwroot\css\stylish-portfolio.css" />
     <Content Include="wwwroot\css\timeline-style.css" />
     <Content Include="wwwroot\font-awesome\css\font-awesome.css" />
@@ -66,9 +65,13 @@
     <Content Include="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="wwwroot\img\Main\1080.jpg" />
     <Content Include="wwwroot\img\Main\bg.jpg" />
     <Content Include="wwwroot\img\Main\callout.jpg" />
+    <Content Include="wwwroot\img\Main\placeholder-1000x250.png" />
+    <Content Include="wwwroot\img\Main\PLACEHOLDER-1200-x600.png" />
+    <Content Include="wwwroot\img\Main\placeholder-600x400.png" />
+    <Content Include="wwwroot\img\Main\placeholder-800x800.jpg" />
+    <Content Include="wwwroot\img\Main\PLACEHOLDER-Facebook-1200-x600.png" />
     <Content Include="wwwroot\img\Main\portfolio-1.jpg" />
     <Content Include="wwwroot\img\Main\portfolio-2.jpg" />
     <Content Include="wwwroot\img\Main\portfolio-3.jpg" />
@@ -81,8 +84,14 @@
     <Content Include="wwwroot\img\Welcome\welcome-yellow-field.jpg" />
     <Content Include="wwwroot\js\disable-scrolling.js" />
     <Content Include="wwwroot\js\jquery.js" />
+    <Content Include="wwwroot\js\jquery.mousewheel.min.js" />
+    <Content Include="wwwroot\js\lightgallery-all.js" />
+    <Content Include="wwwroot\js\lightgallery-all.min.js" />
+    <Content Include="wwwroot\js\lightgallery.js" />
+    <Content Include="wwwroot\js\lightgallery.min.js" />
     <Content Include="wwwroot\js\navbar.js" />
     <Content Include="wwwroot\js\navbar.min.js" />
+    <Content Include="wwwroot\js\products-gallery.js" />
     <Content Include="wwwroot\js\welcome-button.js" />
   </ItemGroup>
   <ItemGroup>
